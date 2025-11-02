@@ -1,5 +1,14 @@
 fastapi
 uvicorn[standard]
-numpy
-Pillow
+pydantic
 python-multipart
+numpy
+pillow
+scikit-learn
+pandas
+matplotlib
+rich
+tensorflow-macos
+tensorflow-metal>=1.1
+tensorflow-addons
+tensorflow-model-optimization
