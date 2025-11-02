@@ -2,13 +2,11 @@ fastapi
 uvicorn[standard]
 pydantic
 python-multipart
-numpy
+numpy<2.0
 pillow
 scikit-learn
 pandas
-matplotlib
+matplotlib<3.9
 rich
-tensorflow-macos
-tensorflow-metal>=1.1
-tensorflow-addons
-tensorflow-model-optimization
+tensorflow-macos==2.16.1
+tensorflow-metal==1.1.0
