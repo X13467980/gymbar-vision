@@ -25,7 +25,7 @@ async def predict(file: UploadFile = File(...), x_api_key: Optional[str] = Heade
     if x_api_key != API_KEY:
         raise HTTPException(status_code=401, detail="Unauthorized")
     img_bytes = await file.read()
-    _ = preprocess(img_bytes)  # ここでは前処理だけ行い、モデルは未使用
+    _ = preprocess(img_bytes)  # 前処理のみ実施
 
     # ダミー：既定クラスへディリクレ分布で確率を割り振り
     labels = ["lat_pulldown", "chest_press", "leg_press", "smith_machine"]
